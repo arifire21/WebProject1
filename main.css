@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Optima', 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+/* main page */
+header {
+    background-color: darkred;
+    /* margin-left: -8px; */
+    margin-bottom: 20px;
+    padding: 50px 0px 20px 50px;
+    width: 100%;
+}
+
+footer {
+    position: static;
+    background-color: darkred;
+    /* margin-left: -8px; */
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    overflow-x: hidden;
+    text-overflow: clip;
+}
+
+header, nav {
+    display: inline-block;
+}
+
+.top-navlink{
+    color: white;
+    font-size: 16pt;
+    overflow-x: hidden;
+    text-overflow: clip;
+    width: min-content;
+}
+
+.top-navlink:hover {
+    transition: all 0.2s;
+    color: gold;
+    /* box-shadow: 0 0 100px white; */
+}
+
+.top-navlink:visited {
+    color: lightslategray;
+}
+
+nav p {
+    display: inline-block;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* character tab */
+table {
+    margin: 25px 0;
+    max-width: 400px;
+}
+
+tr th{
+    font-variant: small-caps;
+    background-color: goldenrod;
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 2px solid red;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type{
+    border-bottom: 2px solid goldenrod;
+}
