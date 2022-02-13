@@ -114,8 +114,8 @@ nav p {
 }
 
 #horiz {
-    display: flex;
-    justify-content: center;
+    padding-top: 25%;
+    /* text-align: center; */
 }
 
 .char-caption {
@@ -140,7 +140,7 @@ table {
 
     tr th{
         font-variant: small-caps;
-        background-color: greenyellow;
+        background-color: darkolivegreen;
         color: white;
         text-align: left;
     }
@@ -159,7 +159,7 @@ table {
 
     /* make border inside table only */
     td {
-        border-left: 1px solid greenyellow;
+        border-left: 1px solid darkolivegreen;
     }
 
     td:first-of-type {
@@ -175,5 +175,5 @@ table {
     }
 
     tbody tr:last-of-type{
-        border-bottom: 2px solid greenyellow;
+        border-bottom: 2px solid darkolivegreen;
     }
