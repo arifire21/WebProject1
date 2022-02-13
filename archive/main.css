@@ -1,0 +1,163 @@
+body {
+    margin-bottom: 0;
+    font-family: 'Optima', 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* MAIN PAGE */
+header {
+    background-color: darkred;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    padding: 50px 0px 20px 50px;
+    width: 100%;
+}
+
+footer {
+    position: static;
+    background-color: darkred;
+    margin-left: -8px;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+header, nav {
+    display: inline-block;
+}
+
+.top-navlink{
+    color: white;
+    font-size: 16pt;
+    overflow-x: hidden;
+    text-overflow: clip;
+    width: min-content;
+}
+
+.top-navlink:hover {
+    transition: all 0.2s;
+    color: gold;
+    /* box-shadow: 0 0 100px white; */
+}
+
+.top-navlink:visited {
+    color: lightslategray;
+}
+
+/* circle things dividing nav links */
+nav p {
+    display: inline-block;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+hr {width: 90%;}
+
+/* --------------------------------- */
+ /* CHARACTER TAB */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin: 25px 200px;
+    /* margin-top: 0px; */
+    ;
+}
+
+.char-caption {
+    font-weight: bold;
+}
+
+/* .flex-item .list-caption {
+    margin: 0%;
+    width: min-content;
+    height: min-content;
+} */
+
+.char-info {
+    margin-left: 25px;
+}
+
+table {
+    max-width: 400px;
+    border-collapse: collapse;
+}
+
+    tr th{
+        font-variant: small-caps;
+        background-color: goldenrod;
+        color: white;
+        text-align: left;
+    }
+
+    #table-edge-left {
+        border-top-left-radius: 10px;
+    }
+
+    #table-edge-right {
+        border-top-right-radius: 10px;
+    }
+
+    th, td {
+        padding: 12px 15px;
+    }
+
+    /* make border inside table only */
+    td {
+        border-left: 1px solid goldenrod;
+    }
+
+    td:first-of-type {
+        border: none;
+    }
+
+    /* tbody tr {
+        border-bottom: 2px solid red;
+    } */
+
+    tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    tbody tr:last-of-type{
+        border-bottom: 2px solid goldenrod;
+    }
+
+/* --------------------------------- */
+ /* INFO TAB */
+.dim-info {
+    margin-left: 20px;
+}
+
+ .crest {
+     width: 60px;
+     height: 60px;
+     display: inline-block;
+ }
+
+ .dim-name {
+     display: inline-block;
+     text-decoration: underline;
+ }
+
+ li {
+     text-transform: capitalize;
+     list-style-position: inside;
+ }
