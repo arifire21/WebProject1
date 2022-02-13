@@ -3,43 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>World Information</title>
+    <title>Characteristics</title>
 </head>
 <body>
     <header>
-        <a href="index.html"> <img id="logo" src="images/logo.png" alt="landing_pg_logo" width="50vw" height="70vh" title="Landing Page"></a>
+        <!-- <a href="index.html"> <img id="logo" src="images/logo.png" alt="landing_pg_logo" width="50vw" height="70vh" title="Landing Page"></a> -->
         <nav>
-            <a class="top-navlink" href="page1.html">World Information</a><p>&middot;</p>
-            <a class="top-navlink" href="page2.html"> Characters/Species</a><p>&middot;</p>
+            <a class="top-navlink" href="index.html">Home</a><p>&middot;</p>
+            <a class="top-navlink" href="page1.html">Characteristics</a><p>&middot;</p>
+            <a class="top-navlink" href="page2.html"> My Cat</a><p>&middot;</p>
             <a class="top-navlink" href="index2.html">See Alternate Design</a>
         </nav>
     </header>
 
-    <h1>World Information</h1>
+    <h1 class="main-title">Maine Coon Characteristics</h1>
     <hr>
-    <h2>Dimensions</h2>
-    <div class="dim-info">
-        <img class="crest" src="images/Crest1.png" alt="crest1">
-        <h3 class="dim-name">Classicana</h3>
-            <p>heres some text</p>
-        
-        <br>
-        <img class="crest" src="images/Crest2.png" alt="crest2">
-        <h3 class="dim-name">ShadeRealm</h3>
-            <p>heres some text</p>
 
-        <br>
-        <img class="crest" src="images/Crest3.png" alt="crest3">
-        <h3 class="dim-name">Anthrolyth</h3>
-        <p>heres some text</p>
+    <div class="flex-container">
+        <div class="flex-item">
+            <table>
+                <caption class="char-caption">Characteristics Seen in Maine Coons</caption>
+                <tr>
+                    <th id="table-edge-left">Markings</th>
+                    <th>Coat Colors</th>
+                    <th>Eye Colors</th>
+                    <th id="table-edge-right">Weights (lbs)</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>M on forehead</td>
+                        <td>Brown</td>
+                        <td>Yellow</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Stripes (mainly)</td>
+                        <td>Orange</td>
+                        <td>Green</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Fluffy paws and tail</td>
+                        <td>Gray</td>
+                        <td>Copper</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Long whiskers</td>
+                        <td>Pegasus</td>
+                        <td>Gold</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+            <cite class="char-caption">source for <a href="https://www.mainecooncentral.com/maine-coon-size/" target="_blank">sizing</a> and some <a href="https://www.mainecooncentral.com/how-to-tell-a-maine-coon-from-a-tabby/" target="_blank">markings</a>.</cite>
+        </div>
 
-        <br>
-        <img class="crest" src="images/Crest4.png" alt="crest4">
-        <h3 class="dim-name">Swinic</h3>
-            <p>heres some text</p>
+        <div class="flex-item">
+            <p><b>Maine Coons also:</b></p>
+            <ul>
+                <li>Have ear tufts</li>
+                <li>Have a square muzzle</li>
+                <li>Like water, with semi-water repellent fur</li>
+                <li>Use vocalizations of chirping and trilling</li>
+                <li>Are considered to be "gentle giants"</li>
+                <li>Have a slower growth rate</li>
+            </ul>
+            <br>
+            <img src="images/cat2.jpg" alt="mc_kittens" height="150" width="200">
+            <br>
+            <a href="https://www.vetwest.com.au/pet-library/maine-coon" target="_blank">image source</a>
+
+        </div>
     </div>
-
-    
 
     <footer>
         <p>&copy; Arianna Loucks | 2022</p>

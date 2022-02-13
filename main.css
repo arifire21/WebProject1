@@ -4,19 +4,39 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    border-radius: 25px
+}
+
+a {
+    color: navy;
+}
+
+hr {width: 90%;}
+
+a:hover {
+    transition: all 0.2s;
+    color: gold;
+    /* box-shadow: 0 0 100px white; */
+}
+
+a:visited {
+    color: rgb(193, 193, 193);
+}
+
 /* MAIN PAGE */
 header {
-    background-color: darkred;
+    background-color: cadetblue;
     margin-left: -8px;
     margin-top: -8px;
     margin-bottom: 20px;
-    padding: 50px 0px 20px 50px;
+    padding: 30px 0px 20px 50px;
     width: 100%;
 }
 
 footer {
     position: static;
-    background-color: darkred;
+    background-color: cadetblue;
     margin-left: -8px;
     bottom: 0;
     padding: 20px;
@@ -40,15 +60,15 @@ header, nav {
     width: min-content;
 }
 
-.top-navlink:hover {
+/* .top-navlink:hover {
     transition: all 0.2s;
     color: gold;
-    /* box-shadow: 0 0 100px white; */
-}
+    /* box-shadow: 0 0 100px white;
+} */
 
-.top-navlink:visited {
-    color: lightslategray;
-}
+/* .top-navlink:visited {
+    color: rgb(193, 193, 193);
+} */
 
 /* circle things dividing nav links */
 nav p {
@@ -60,29 +80,41 @@ nav p {
     margin-right: 10px;
 }
 
-#logo {
-    cursor: pointer;
-    margin-right: 30px;
+.main-title {
+    text-align: center;
 }
 
-hr {width: 90%;}
+.title-stuff {
+    text-align: center;
+}
+
+
 
 /* --------------------------------- */
- /* CHARACTER TAB */
+ /* CHARACTERISTICS TAB */
+ /* li {
+    text-transform: capitalize;
+    list-style-position: inside;
+} */
+
 .flex-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .flex-item {
-    margin: 25px 200px;
+    margin: 23px;
     /* margin-top: 0px; */
-    ;
+}
+
+#horiz {
+    display: flex;
+    justify-content: center;
 }
 
 .char-caption {
-    font-weight: bold;
+    text-align: center;
 }
 
 /* .flex-item .list-caption {
@@ -98,11 +130,12 @@ hr {width: 90%;}
 table {
     max-width: 400px;
     border-collapse: collapse;
+    /* caption-side: bottom; */
 }
 
     tr th{
         font-variant: small-caps;
-        background-color: goldenrod;
+        background-color: greenyellow;
         color: white;
         text-align: left;
     }
@@ -121,7 +154,7 @@ table {
 
     /* make border inside table only */
     td {
-        border-left: 1px solid goldenrod;
+        border-left: 1px solid greenyellow;
     }
 
     td:first-of-type {
@@ -137,27 +170,5 @@ table {
     }
 
     tbody tr:last-of-type{
-        border-bottom: 2px solid goldenrod;
+        border-bottom: 2px solid greenyellow;
     }
-
-/* --------------------------------- */
- /* INFO TAB */
-.dim-info {
-    margin-left: 20px;
-}
-
- .crest {
-     width: 60px;
-     height: 60px;
-     display: inline-block;
- }
-
- .dim-name {
-     display: inline-block;
-     text-decoration: underline;
- }
-
- li {
-     text-transform: capitalize;
-     list-style-position: inside;
- }
