@@ -4,10 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-img {
-    border-radius: 25px;
-    box-shadow: 5px 5px 4px gray;
-}
+
 
 a {
     color: navy;
@@ -56,8 +53,6 @@ header, nav {
 .top-navlink{
     color: white;
     font-size: 16pt;
-    overflow-x: hidden;
-    text-overflow: clip;
     width: min-content;
 }
 
@@ -89,7 +84,22 @@ nav p {
     text-align: center;
 }
 
+#cat-img {
+    border-radius: 25px;
+    box-shadow: 5px 5px 4px gray;
+    width: 200px;
+    height: 250px;
+    transition: width 1s, height 1s;
+}
 
+#cat-img:hover {
+    width: 350px;
+    height: 400px;
+}
+
+.title-stuff #instructions {
+    display: block;
+}
 
 /* --------------------------------- */
  /* CHARACTERISTICS TAB */
