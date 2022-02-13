@@ -1,13 +1,14 @@
 body {
-    margin: 0;
+    margin-bottom: 0;
     font-family: 'Optima', 'Segoe UI', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-/* main page */
+/* MAIN PAGE */
 header {
     background-color: darkred;
-    /* margin-left: -8px; */
+    margin-left: -8px;
+    margin-top: -8px;
     margin-bottom: 20px;
     padding: 50px 0px 20px 50px;
     width: 100%;
@@ -16,15 +17,15 @@ header {
 footer {
     position: static;
     background-color: darkred;
-    /* margin-left: -8px; */
+    margin-left: -8px;
+    bottom: 0;
     padding: 20px;
     width: 100%;
 }
 
 footer p {
     color: white;
-    overflow-x: hidden;
-    text-overflow: clip;
+    text-align: center;
 }
 
 header, nav {
@@ -49,6 +50,7 @@ header, nav {
     color: lightslategray;
 }
 
+/* circle things dividing nav links */
 nav p {
     display: inline-block;
     color: white;
@@ -63,32 +65,99 @@ nav p {
     margin-right: 30px;
 }
 
-/* character tab */
+hr {width: 90%;}
+
+/* --------------------------------- */
+ /* CHARACTER TAB */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin: 25px 200px;
+    /* margin-top: 0px; */
+    ;
+}
+
+.char-caption {
+    font-weight: bold;
+}
+
+/* .flex-item .list-caption {
+    margin: 0%;
+    width: min-content;
+    height: min-content;
+} */
+
+.char-info {
+    margin-left: 25px;
+}
+
 table {
-    margin: 25px 0;
     max-width: 400px;
+    border-collapse: collapse;
 }
 
-tr th{
-    font-variant: small-caps;
-    background-color: goldenrod;
-    color: white;
-    text-align: left;
-    border-radius: 10px;
+    tr th{
+        font-variant: small-caps;
+        background-color: goldenrod;
+        color: white;
+        text-align: left;
+    }
+
+    #table-edge-left {
+        border-top-left-radius: 10px;
+    }
+
+    #table-edge-right {
+        border-top-right-radius: 10px;
+    }
+
+    th, td {
+        padding: 12px 15px;
+    }
+
+    /* make border inside table only */
+    td {
+        border-left: 1px solid goldenrod;
+    }
+
+    td:first-of-type {
+        border: none;
+    }
+
+    /* tbody tr {
+        border-bottom: 2px solid red;
+    } */
+
+    tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    tbody tr:last-of-type{
+        border-bottom: 2px solid goldenrod;
+    }
+
+/* --------------------------------- */
+ /* INFO TAB */
+.dim-info {
+    margin-left: 20px;
 }
 
-th, td {
-    padding: 12px 15px;
-}
+ .crest {
+     width: 60px;
+     height: 60px;
+     display: inline-block;
+ }
 
-tbody tr {
-    border-bottom: 2px solid red;
-}
+ .dim-name {
+     display: inline-block;
+     text-decoration: underline;
+ }
 
-tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-tbody tr:last-of-type{
-    border-bottom: 2px solid goldenrod;
-}
+ li {
+     text-transform: capitalize;
+     list-style-position: inside;
+ }
